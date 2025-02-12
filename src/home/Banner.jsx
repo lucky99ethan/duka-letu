@@ -35,7 +35,7 @@ const Banner = () => {
     setFilteredProducts(filtered);
   };
 
-  return (
+  return ( 
     <div className="banner-section style-4">
       <div className="container">
         <div className="banner-content">

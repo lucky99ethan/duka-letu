@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Ratting from "../components/Rating"; // Ensure correct import
+import Rating from "../components/Rating"; // Ensure correct import
 const title = "Our Products";
 
 const ProductData = [
@@ -83,9 +83,6 @@ const CategoryShowCase = () => {
 
   //Category based filtering
   const filterItem = (category) => {
-    // const updateItem = ProductData.filter((curElem) =>{
-    //   return curElem.cate === categItem; 
-    // })
     if (category === "All") {
       setItems(ProductData);
     } else {
@@ -112,7 +109,7 @@ const CategoryShowCase = () => {
           <h2 className="title">{title}</h2>
           <div className="course-filter-group">
             <ul className="lab-ul">
-              <li onClick={() => setItems(ProductData)}>All</li>
+              <li onClick={() => filterItem("All")}>All</li>
               <li onClick={() => filterItem("Shoes")}>Shoes</li>
               <li onClick={() => filterItem("Bags")}>Bags</li>
               <li onClick={() => filterItem("Phones")}>Phones</li>
@@ -134,8 +131,8 @@ const CategoryShowCase = () => {
                         <div className="course-cate">
                           <a href="#">{product.cate}</a>
                         </div>
-                        <div className="course-reiew">
-                          <Ratting />
+                        <div className="course-review">
+                          <Rating />
                         </div>
                       </div>
                     </div>
