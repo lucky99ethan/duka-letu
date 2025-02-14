@@ -90,6 +90,7 @@ const Shop = () => {
                   setProducts={setProducts}
                   selectedCategory={selectedCategory}
                 />
+                <p>Selected Category: {selectedCategory}</p>
               </aside>
             </div>
           </div>

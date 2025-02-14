@@ -14,7 +14,7 @@ const ShopCategory = ({
         <h5 className="ms-2">All Categories</h5>
       </div>
       <div>
-        {/* <button onClick={() => setProducts(Data)} className={`m2 ${selectedCategory === "All" ? "bg-warning" : ""}`}>All</button> */}
+
         {menuItems.map((val, id) => {
           return (
             <button
